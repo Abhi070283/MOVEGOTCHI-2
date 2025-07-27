@@ -1,0 +1,15 @@
+[package]
+name = "aptogotchi"
+version = "1.0.0"
+upgrade_policy = "compatible"
+
+[addresses]
+aptogotchi_addr = "_"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/movementlabsxyz/aptos-core.git", rev = "movement", subdir = "aptos-move/framework/aptos-framework"}
+AptosTokenObjects = {git = "https://github.com/movementlabsxyz/aptos-core.git", rev = "movement", subdir = "aptos-move/framework/aptos-token-objects"}
+
+# For use when developing and testing this module
+[dev-addresses]
+aptogotchi_addr = "0x100"
